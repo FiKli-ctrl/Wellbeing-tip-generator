@@ -19,6 +19,10 @@ function generateTip(event) {
     let context = "You are a helpful assistant who is passionate about people's wellbeing";
     let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+    let tipElement = document.querySelector("#tip");
+    tipElement.classList.remove("hidden");
+    tipElement.innerHTML = `⏳Generating your wellbeing tip about ${instructionsInput.value}`;
+
     console.log("generating tip");
     console.log(`Prompt: ${prompt}`);
     console.log(`Context; ${context}`);
