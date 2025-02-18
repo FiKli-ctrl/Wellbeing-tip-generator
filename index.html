@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>Wellbeing tip generator</title>
 </head>
 <body>
@@ -11,7 +12,7 @@
     <header>
     <h1>Wellbeing tip generator</h1></header>
     <main>
-        <form>
+        <form id="wellbeing-tip-form">
             <input type="text" 
             placeholder="Please enter the area of wellbeing you would like a tip on"
             autofocus
@@ -21,7 +22,7 @@
             />
             <input type="submit" class="button"/>
         </form>
-        <div class="tip">
+        <div class="tip" id="tip">
             The wellbeing tip will go here.
         </div>
     </main>
