@@ -22,15 +22,8 @@ function generateTip(event) {
     let tipElement = document.querySelector("#tip");
     tipElement.classList.remove("hidden");
     tipElement.innerHTML = `<div class="generating">⏳Generating your wellbeing tip about ${instructionsInput.value}</div>`;
-
-    console.log("generating tip");
-    console.log(`Prompt: ${prompt}`);
-    console.log(`Context; ${context}`);
     
     axios.get(apiURL).then(displayTip);
-
-
-  
 
 
 }
