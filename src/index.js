@@ -21,7 +21,7 @@ function generateTip(event) {
 
     let tipElement = document.querySelector("#tip");
     tipElement.classList.remove("hidden");
-    tipElement.innerHTML = `⏳Generating your wellbeing tip about ${instructionsInput.value}`;
+    tipElement.innerHTML = `<div class="generating">⏳Generating your wellbeing tip about ${instructionsInput.value}</div>`;
 
     console.log("generating tip");
     console.log(`Prompt: ${prompt}`);
